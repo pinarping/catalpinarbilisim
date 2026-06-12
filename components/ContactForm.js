@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Cta() {
   return (
     <section className="py-24 px-6 bg-[#F0F5FF] border-t border-[#D6E4FF]">
@@ -10,9 +12,12 @@ export default function Cta() {
         <p className="text-xl text-neutral-600 mb-10 leading-relaxed">
           Fikirlerinizi gerçeğe dönüştürmek ve dijital dünyada sağlam bir yer edinmek için bizimle iletişime geçin. Ekibimiz size en uygun çözümü sunmak için hazır.
         </p>
-        <button className="px-10 py-5 bg-[#2A66F5] text-white text-lg font-bold rounded-xl hover:bg-[#1E54D4] transition-all shadow-xl shadow-[#2A66F5]/20 hover:-translate-y-1">
+        <Link 
+          href="/iletisim" 
+          className="inline-block px-10 py-5 bg-[#2A66F5] text-white text-lg font-bold rounded-xl hover:bg-[#1E54D4] transition-all shadow-xl shadow-[#2A66F5]/20 hover:-translate-y-1"
+        >
           Bizimle İletişime Geçin
-        </button>
+        </Link>
       </div>
     </section>
   );
