@@ -4,11 +4,29 @@ import Link from 'next/link';
 
 export default function Iletisim() {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [phone, setPhone] = useState('');
+
+  // Telefon numarasını otomatik formatlayan fonksiyon
+  const handlePhoneChange = (e) => {
+    // Sadece rakamları al (harf veya sembol girilmesini engeller)
+    const cleaned = e.target.value.replace(/\D/g, '');
+    
+    // Numarayı en fazla 11 haneyle sınırla
+    const limited = cleaned.slice(0, 11);
+
+    // 05XX XXX XXXX formatında boşlukları ekle
+    let formatted = limited;
+    if (limited.length > 7) {
+      formatted = `${limited.slice(0, 4)} ${limited.slice(4, 7)} ${limited.slice(7)}`;
+    } else if (limited.length > 4) {
+      formatted = `${limited.slice(0, 4)} ${limited.slice(4)}`;
+    }
+
+    setPhone(formatted);
+  };
 
   const handleSubmit = (e) => {
-    e.preventDefault(); // Sayfanın yenilenmesini engeller
-    // İleride buraya e-posta gönderme API kodu eklenecek.
-    // Şimdilik sadece başarı mesajını gösteriyoruz.
+    e.preventDefault(); 
     setIsSubmitted(true);
   };
 
@@ -49,7 +67,13 @@ export default function Iletisim() {
         </div>
         <div>
           <label className="block text-sm font-semibold mb-2 text-neutral-700">Telefon Numarası</label>
-          <input type="tel" className="w-full border border-neutral-300 rounded-xl p-4 focus:outline-none focus:border-[#2A66F5] focus:ring-1 focus:ring-[#2A66F5] transition-all" placeholder="0555 555 55 55" />
+          <input 
+            type="tel" 
+            value={phone}
+            onChange={handlePhoneChange}
+            className="w-full border border-neutral-300 rounded-xl p-4 focus:outline-none focus:border-[#2A66F5] focus:ring-1 focus:ring-[#2A66F5] transition-all" 
+            placeholder="05XX XXX XXXX" 
+          />
         </div>
         <div>
           <label className="block text-sm font-semibold mb-2 text-neutral-700">Mesajınız</label>

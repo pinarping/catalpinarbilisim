@@ -10,13 +10,14 @@ export default function Projects() {
               Öne Çıkan Projelerimiz
             </span>
           </h2>
-          <p className="text-neutral-500 max-w-2xl mx-auto">Geliştirdiğimiz modern altyapılar ve yazılım çözümlerinden someları.</p>
+          <p className="text-neutral-500 max-w-2xl mx-auto">Geliştirdiğimiz modern altyapılar ve yazılım çözümlerinden bazıları.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           
           <div className="group relative overflow-hidden rounded-2xl bg-neutral-50/80 backdrop-blur-sm border border-neutral-200 hover:shadow-2xl hover:shadow-slate-200 hover:-translate-y-2 hover:border-slate-300 transition-all duration-500 flex flex-col">
-            <div className="h-56 w-full bg-[#0a0f1d] flex items-center justify-center overflow-hidden border-b border-neutral-100">
+            {/* Arka plan rengi tam olarak senin ilettiğin #0c0f2f koduyla güncellendi */}
+            <div className="h-56 w-full bg-[#0c0f2f] flex items-center justify-center overflow-hidden border-b border-neutral-100">
               <img 
                 src="/kebbapp-logo.png" 
                 alt="KebbApp Logo" 
