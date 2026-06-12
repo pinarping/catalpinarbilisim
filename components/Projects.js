@@ -16,12 +16,13 @@ export default function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           
           <div className="group relative overflow-hidden rounded-2xl bg-neutral-50/80 backdrop-blur-sm border border-neutral-200 hover:shadow-2xl hover:shadow-slate-200 hover:-translate-y-2 hover:border-slate-300 transition-all duration-500 flex flex-col">
-            {/* Arka plan rengi tam olarak senin ilettiğin #0c0f2f koduyla güncellendi */}
+            {/* Arka plan rengi tam olarak #0c0f2f yapıldı */}
             <div className="h-56 w-full bg-[#0c0f2f] flex items-center justify-center overflow-hidden border-b border-neutral-100">
+              {/* Büyüme efekti diğer kartla eşitlenerek group-hover:scale-110 yapıldı */}
               <img 
                 src="/kebbapp-logo.png" 
                 alt="KebbApp Logo" 
-                className="w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-105"
+                className="w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110"
               />
             </div>
             <div className="p-8 flex-grow flex flex-col">
@@ -45,7 +46,7 @@ export default function Projects() {
               <img 
                 src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=800&auto=format&fit=crop" 
                 alt="Kurumsal Web Mimarisi" 
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
             </div>
             <div className="p-8 flex-grow flex flex-col">
