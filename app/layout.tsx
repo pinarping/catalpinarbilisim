@@ -12,7 +12,7 @@ export const metadata = {
   description: "Özel yazılım çözümleri, modern web mimarileri ve güvenli altyapılar.",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="tr">
       <body className={techFont.className}>
