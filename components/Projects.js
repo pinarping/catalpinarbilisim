@@ -5,8 +5,12 @@ export default function Projects() {
       
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Öne Çıkan Projelerimiz</h2>
-          <p className="text-neutral-500 max-w-2xl mx-auto">Geliştirdiğimiz modern altyapılar ve yazılım çözümlerinden bazıları.</p>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#2A66F5] to-[#1E293B]">
+              Öne Çıkan Projelerimiz
+            </span>
+          </h2>
+          <p className="text-neutral-500 max-w-2xl mx-auto">Geliştirdiğimiz modern altyapılar ve yazılım çözümlerinden someları.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -21,11 +25,15 @@ export default function Projects() {
             </div>
             <div className="p-8 flex-grow flex flex-col">
               <div className="mb-4 text-sm font-semibold text-slate-500 uppercase tracking-wider">SaaS Altyapısı</div>
-              <h3 className="text-2xl font-bold mb-4 text-neutral-900 group-hover:text-slate-800 transition-colors">KebbApp</h3>
+              <h3 className="text-2xl font-bold mb-4">
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#2A66F5] to-[#1E293B]">
+                  KebbApp
+                </span>
+              </h3>
               <p className="text-neutral-600 leading-relaxed mb-8 flex-grow">
                 SaaS mimarisine sahip kapsamlı yazılım projesi. Teknik dokümantasyon, sunucu yönetimi ve modern arayüzü ile uçtan uca geliştirilmiş sistem altyapısı.
               </p>
-              <a href="/projeler/kebbapp" className="inline-flex items-center text-slate-900 font-semibold group-hover:text-sky-700 transition-colors">
+              <a href="/projeler/kebbapp" className="inline-flex items-center text-slate-900 font-semibold group-hover:text-[#2A66F5] transition-colors">
                 Projeyi İncele →
               </a>
             </div>
@@ -41,11 +49,15 @@ export default function Projects() {
             </div>
             <div className="p-8 flex-grow flex flex-col">
               <div className="mb-4 text-sm font-semibold text-slate-500 uppercase tracking-wider">Dijital Çözümler</div>
-              <h3 className="text-2xl font-bold mb-4 text-neutral-900 group-hover:text-slate-800 transition-colors">Kurumsal Web Mimarisi</h3>
+              <h3 className="text-2xl font-bold mb-4">
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#2A66F5] to-[#1E293B]">
+                  Kurumsal Web Mimarisi
+                </span>
+              </h3>
               <p className="text-neutral-600 leading-relaxed mb-8 flex-grow">
                 Markaların dijital varlıklarını güçlendiren, yüksek performanslı ve minimalist UI/UX standartlarına sahip özel web platformları.
               </p>
-              <a href="/projeler/kurumsal-web" className="inline-flex items-center text-slate-900 font-semibold group-hover:text-sky-700 transition-colors">
+              <a href="/projeler/kurumsal-web" className="inline-flex items-center text-slate-900 font-semibold group-hover:text-[#2A66F5] transition-colors">
                 Projeyi İncele →
               </a>
             </div>
