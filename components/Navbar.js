@@ -8,7 +8,7 @@ export default function Navbar() {
       {/* Logonun orijinal yatay konumunu koruyup, dikeyde menüyü kalınlaştırmasını engelliyoruz */}
       <div className="h-0 flex items-center overflow-visible">
         <Image 
-          src="/logo.png?v=2" 
+          src="/logo-2.png" 
           alt="Çatalpınar Bilişim Logo" 
           width={400} 
           height={200} 
